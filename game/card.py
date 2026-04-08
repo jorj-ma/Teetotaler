@@ -1,7 +1,8 @@
 class Card:
+    suites = ["HEARTS", "DIAMONDS", "CLUBS", "SPADES"]
+    ranks = ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"]
+
     def __init__(self, suite, rank):
-        suites = ["HEARTS", "DIAMONDS", "CLUBS", "SPADES"]
-        ranks = ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"]
 
         if not isinstance(suite, str):
             raise TypeError (f"suit expected to be a string got {type(suite).__name__}")
@@ -12,12 +13,12 @@ class Card:
         suite_upper=suite.upper()
         rank_upper=rank.upper()
 
-        if rank_upper in ranks:
+        if rank_upper in Card.ranks:
             pass
         else:
             raise TypeError(f"Added rank not in rank list {ranks}")
         
-        if suite_upper in suites:
+        if suite_upper in Card.suites:
             pass
         else:
             raise TypeError(f"Added suit not in suit list {suites}")
