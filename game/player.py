@@ -1,16 +1,8 @@
-class Player:
-    def __init__(self,name:str, money:int = 2000):
+class Player():
+    def __init__(self,type="pc", cards=[], total_amount_bet=0,name="", amount=0):
         self.name=name
-        self.money=money
-        self.cards=[]
-        self.total_bet=0
-        self.current_bet=0
-    
-    def bet(self, amount:int):
-        pass
-    
-    def reset_bet(self):
-        pass
-
-    def __repr__(self):
-        pass
+        self.type=type
+        self.cards=cards
+        self.totall_amount_bet=total_amount_bet
+        self.amount=amount
+  
