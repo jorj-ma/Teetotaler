@@ -26,11 +26,11 @@ class Deck:
             card=deck[n]
             deck.pop(n)
             newDeck.append(card)
-        print("new Deck length:", len(newDeck))
-        print("old Deck length:", len(deck))
-        for card in newDeck:
-            card.print_card()
-            print("--")
+        # print("new Deck length:", len(newDeck))
+        # print("old Deck length:", len(deck))
+        # for card in newDeck:
+        #     card.print_card()
+        #     print("--")
         self.deck=newDeck
     
     def print_deck(self):

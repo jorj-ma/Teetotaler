@@ -16,12 +16,12 @@ class Card:
         if rank_upper in Card.ranks:
             pass
         else:
-            raise TypeError(f"Added rank not in rank list {ranks}")
+            raise TypeError(f"Added rank not in rank list {Card.ranks}")
         
         if suite_upper in Card.suites:
             pass
         else:
-            raise TypeError(f"Added suit not in suit list {suites}")
+            raise TypeError(f"Added suit not in suit list {Card.suites}")
         
 
         self.rank= rank_upper
