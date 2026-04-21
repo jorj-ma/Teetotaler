@@ -1,0 +1,1 @@
+pipenv install flask prisma python-dotenv

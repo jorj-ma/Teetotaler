@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
 prisma = "*"
 python-dotenv = "*"
+flask = {extras = ["async"], version = "*"}
 
 [dev-packages]
 
